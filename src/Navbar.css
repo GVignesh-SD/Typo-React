@@ -1,0 +1,123 @@
+*{
+    text-decoration: none;
+}
+
+header.navigate{
+    width: 100%;
+    height: 80px;
+    background: rgba(2, 2, 2, 0.8);
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 2px );
+    -webkit-backdrop-filter: blur( 2px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: sticky;
+    top: 0px;
+    z-index: 100;
+}
+
+header.navigate .logo{
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+header.navigate .hamburger{
+    display: none;
+}
+
+header.navigate .nav-bar ul{
+    display: flex;
+    list-style-type:none;
+}
+
+header.navigate .nav-bar ul li a{
+    display: block;
+    color: white;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+}
+
+header.navigate .nav-bar ul li a:hover{
+    color: black;
+    background-color: white;
+
+}
+
+header.navigate .nav-bar ul li a.active{
+    color: black;
+    background-color: white;
+}
+
+@media only screen and (max-width: 1320px)
+{
+    header.navigate{
+        padding: 0 50px;
+
+    }
+} 
+
+@media only screen and (max-width: 1100px)
+{
+    header.navigate{
+        padding: 0 30px;
+
+    }
+} 
+
+
+@media only screen and (max-width: 900px)
+{
+    header.navigate .hamburger{
+        display: block;
+        cursor:pointer;
+
+    }
+
+    header.navigate .hamburger .line{
+        width: 30px;
+        height: 3px;
+        background: white;
+        margin: 6px 0;
+    }
+
+    header.navigate .nav-bar {
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        width: 100vw;
+        background-color: black;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    header.navigate .nav-bar.active{
+        height:450px;
+
+    }
+
+    header.navigate .nav-bar ul{
+        display: block;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    header.navigate .nav-bar.active ul{
+        opacity: 1;
+    }
+    header.navigate .nav-bar ul li a{
+        margin-bottom:12px;
+        padding: 10px 10px;
+
+    }
+} 

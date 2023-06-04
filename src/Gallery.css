@@ -1,0 +1,174 @@
+.galleryPage{
+    background: url("https://images.unsplash.com/photo-1522441815192-d9f04eb0615c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8OHx8Y29sb3IlMjBiYWNrZ3JvdW5kfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100%;
+  }
+  
+  .galleryPage h1{
+    padding-top:20px;
+    text-align: center;
+    color: white;
+    padding-bottom: 20px;
+  }
+  
+  
+  .galleryPage .carousel{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .galleryPage .carousel .slide img{
+    max-height: 50vh;
+    width: 100vw;
+  }
+  
+  .galleryPage .image{
+    margin:0 auto ;
+    height: 100%;
+    width: 100vw;
+  
+  }
+  
+  @media only screen and (max-width: 1200px){
+    .galleryPage .carousel{
+    height: 50vh;
+  }
+  
+  .galleryPage .carousel .slide img{
+    height: 100%;
+    width: 100vw;
+  }
+  }
+  
+  @media only screen and (max-width: 900px){
+    .galleryPage .carousel{
+      height: 50vh;
+      object-fit: cover;
+    }
+    
+    .galleryPage .carousel .slide img{
+      height: 100%;
+      width: 100vw;
+    }
+  
+    .galleryPage div.slider-wrapper.axis-horizontal{
+        margin: 0 auto;
+      }
+  
+      .galleryPage button.control-arrow.control-prev,button.control-arrow.control-next
+      {
+        height: 300px;
+        transform: translateY(25%);
+        width: 50px;
+        margin-bottom:0;
+      }
+  
+    }
+  
+    
+  @media only screen and (max-width: 700px){
+    .galleryPage div.slider-wrapper.axis-horizontal{
+     height: 60vh;
+    }
+    .galleryPage .carousel{
+      height: 50vh;
+    }
+    
+    .galleryPage .carousel .slide img{
+      height: 100%;
+      width: 100vw;
+    }
+  
+    
+    .galleryPage button.control-arrow.control-prev,button.control-arrow.control-next
+    {
+      height: 200px;
+      transform: translateY(45%);
+      width: 50px;
+      margin-bottom:0;
+    }
+    }
+  
+    .galleryPage .imageGallery .row {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 0 4px;
+    }
+    
+  
+    @media only screen and (max-width: 600px){
+  
+      .galleryPage div.slider-wrapper.axis-horizontal{
+        height: 50vh;
+       }
+  
+       .galleryPage .carousel{
+        height: 50vh;
+      }
+      
+      .galleryPage .carousel .slide img{
+        height: 200%;
+        width: 100%;
+      }
+    
+      
+      .galleryPage button.control-arrow.control-prev,button.control-arrow.control-next
+      {
+        height: 200px;
+        transform: translateY(50%);
+        width: 50px;
+        margin-bottom:0;
+      }
+      }
+    
+      .galleryPage .imageGallery .row {
+        display: flex;
+        flex-wrap: wrap;
+        padding: 0 4px;
+      }
+    
+      
+    /* Create four equal columns that sits next to each other */
+    .galleryPage .imageGallery .column {
+      flex: 25%;
+      max-width: 25%;
+      padding: 0 4px;
+    }
+    
+    .galleryPage .imageGallery .column img {
+      margin-top: 8px;
+      vertical-align: middle;
+      width: 100%;
+      border-radius: 20px;
+      padding: 15px;
+      transition: 0.5s ease-in-out;
+    }
+  
+    .galleryPage .imageGallery .column img:hover{
+      border: 1px solid white;
+      transition: 0.5s ease-in-out;
+      transform: scale(1.1);
+  
+    }
+    
+    @media screen and (max-width: 800px) {
+      .galleryPage .imageGallery .column {
+        flex: 50%;
+        max-width: 50%;
+      }
+    }
+    
+    @media screen and (max-width: 600px) {
+      .galleryPage .imageGallery .column {
+        flex: 100%;
+        max-width: 100%;
+      }
+    }
+  
+    .galleryPage .imageGallery h1{
+    color: white;
+    text-align: center;
+    }
